@@ -95,7 +95,14 @@ namespace CircularQueues_CSharp
             }
             else
             {
-
+                /*traverse the queue till the last position of the array. */
+                while (FRONT_position <= max - 1)
+                {
+                    Console.Write(queue_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+                /*set the FRONT position to the first element of the array. */
+                FRONT_position = 0;
             }
         }
     }
