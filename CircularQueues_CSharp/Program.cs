@@ -41,8 +41,14 @@ namespace CircularQueues_CSharp
                 else
                     /*If REAR is not at the last position, then its value is incremented by one. */
                     REAR = REAR + 1;
-
             }
+            /* Once the position of REAR is determined, the element is added at its proper place. */
+            queue_array[REAR] = element;
+
+        }
+        public void remove()
+        {
+
         }
         }
     }
